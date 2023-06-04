@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <ImageButton
+        android:id="@+id/btnBackGame"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/gallows"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundImageView" />
+
+    <LinearLayout
+        android:id="@+id/layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallows">
+    </LinearLayout>
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:columnCount="9"
+        android:rowCount="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="А"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Б"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="В"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Г"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Д"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Е"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ё"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ж"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="З"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_10"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="И"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_11"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Й"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_12"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="К"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_13"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Л"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_14"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="М"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_15"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Н"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_16"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="О"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_17"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="П"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_18"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Р"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_19"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="С"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_20"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Т"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_21"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="У"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_22"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ф"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_23"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Х"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_24"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ц"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_25"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ч"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_26"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ш"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_27"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Щ"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_28"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ъ"
+            android:layout_column="1"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_29"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ы"
+            android:layout_column="2"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_30"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:text="Ь"
+            android:layout_column="3"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_31"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:layout_column="5"
+            android:text="Э"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_32"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:layout_column="6"
+            android:text="Ю"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_33"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:layout_column="7"
+            android:text="Я"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_34"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="#DDDDDD"
+            android:fontFamily="@font/halogen"
+            android:padding="0dp"
+            android:layout_column="4"
+            android:text="-"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
